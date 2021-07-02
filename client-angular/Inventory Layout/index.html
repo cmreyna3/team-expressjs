@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Inventory Management Page</title>
+
+    <link href="/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div>
+        <div>
+            <header>
+                <div>
+                    <h1>Inventory Management</h1>
+                </div>
+            </header>
+        </div>
+
+        <div>
+            <form>
+                <label for="itemName">Item name:</label>
+                <input type="text" id="itemName" required   />
+                <input type="button" onClick= "addItems ()" value = "Add Item" />
+            </form>
+        </div>
+
+    </div>
+
+    <br />
+    <br />
+
+    <div>
+        <div>
+            <header> 
+                <h1>Inventory List</h1>
+            </header>
+        <div>
+           
+        <div class ="flex-container">
+            <div class= "flex-child">
+                <ul>
+                    <li><p id = "list-item"></p></li>
+                </ul>
+            </div>
+
+            <div class="flex-child">
+                <button id="decrement">-</button>
+                    <span id="modified">0</span>
+                <button id="increment">+</button>
+            </div>
+        </div>
+        <div>
+            <input type = "button" id = "clear" value = "Clear Modification" onClick="clearModification()"></input>
+            <input type = "button" id = "update" value = "Update QTY" ></input>
+        </div>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
+
+<!-- 
+
+
+<!DOCTYPE html>
+
+<head>
+
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<title>Final Project</title>
+
+</head>
+
+<body>
+
+    <h1>Let's Create a ID Card!</h1>
+
+<form>
+    <label for="firstName">First Name:</label><br>
+    <input type="text" id="firstName"><br>
+
+    <label for="lastName">Last Name:</label><br>
+    <input type="text" id="lastName"><br>
+
+    <label for="age">Age:</label><br>
+    <input type="text" id="age"><br>
+
+    <label for="phoneNumber">Phone Number:</label><br>
+    <input type="number" id="phoneNumber"><br>
+
+    <label for="address" >Address:</label><br>
+    <input type="text" id="address" placeholder= "123 Example Ln."><br>
+
+    <button type="button" onClick="idCard ()">Submit</button>
+
+
+</form><br>
+
+
+<div id="idCard">
+
+<img src="http://www.iconninja.com/files/373/611/612/person-user-profile-male-man-avatar-account-icon.svg">
+
+<h2><p id="postFullName"></p></h2>
+
+<br>
+
+<article>
+    <p id="postAge"></p>
+
+    <p id="postPhoneNumber"></p>
+
+    <p id="postAddress"></p>
+</article>
+
+</div>
+
+
+<script src="script.js"></script>
+</body>
+
+</html> -->
